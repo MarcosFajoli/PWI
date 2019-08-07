@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script>
+            function desfocoemail() {
+                console.log("O campo EMAIL está desfocado. ");
+            }
+            function desfocosenha() {
+                console.log("O campo SENHA está desfocado. ");
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            Email: <input name="email" type="email" onblur="desfocoemail()" /><br>
+            Senha: <input name="senha" type="password" onblur="desfocosenha()" />
+        </form>
+    </body>
+</html>
