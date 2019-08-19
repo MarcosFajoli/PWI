@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exemplo usando IF</title>
+        <meta charset="utf-8">
+        <script>
+            function media() {
+                var v1 = parseFloat(document.f1.v1.value);
+                var v2 = parseFloat(document.f1.v2.value);
+                var media = (v1 + v2)/2;
+                alert(media);
+                if (media >= 7){
+                    document.getElementById("total").style.color = "blue";
+                    document.getElementById("total").innerHTML = "Resultado = aprovado";
+                }else{
+                    document.getElementById("total").style.color = "red";
+                    document.getElementById("total").innerHTML = "Resultado = reprovado";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form action="" name="f1">
+            Valor 1: <input type="text" name="v1" /><br>
+            Valor 2: <input type="text" name="v2" /><br><br>
+            <p id="total"></p>
+        </form>
+        <button onclick="media()">Somar</button>
+    </body>
+</html>
