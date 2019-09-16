@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Exercício 14</title>
+        <title>Exercício 15</title>
         <meta charset="utf-8">
         <script>
             function cont() {
                 for(var i = 0; i <= 10; i++){
-                    document.write("Tabuada do "+ i + "<br>");
+                    document.write("<table border=\"1px solid black\"><tr>Tabuada do "+ i +"</tr>");
                     for(var j = 1; j <= 10; j++){
                         var t = i * j;
-                        document.write(i + " x " + j +" = " + t +"<br>");
+                        document.write("<tr><td align=\"center\">"+ i + " x " + j + "</td><td align=\"center\">"+ t +"</td></tr>");
                     }
-                    document.write("<br>");
+                    document.write("</table>");
+                    document.write("<br>")
                 }
             }
         </script>
